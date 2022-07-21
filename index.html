@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style=" display: inline; margin-right: 100px;">My People</h1>
+    <button id="addNew" style="border: 3px solid blue; padding: 10px; font-size: x-large; background-color: lightblue;"> add a new person</button>
+
+    <div id="displayResults">
+
+    </div>
+   
+    <script id="displayTemplate" type="text/x-handlebars-template">
+        {{#each items}}
+        <div class="displayGrid">
+        <h3 class="name">{{name}}</h3>
+        <a class="email">{{email}}</a>
+        </div>
+        {{/each}}
+      </script>
+
+
+
+<script type="text/javascript" src="jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
